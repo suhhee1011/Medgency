@@ -2,16 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 router.get("/confirm",(req,res)=>{
-    res.render("helper_HelpPage",{
-        title: "nearByClinic",
-        headingInfo:"nearByClinic",
+    res.render("helper_confirmHelp",{
+        title: "Confirmation",
+        headingInfo:"Confirmation",
         script:`<script src="/js/helper_confirmHelp.js"></script>`
     });
 });
 
 router.get("/helpPage",(req,res)=>{
     res.render("helper_HelpPage",{
-        title: "nearByClinic",
+        title: "Help Page",
         headingInfo:"Help Page",
         script:`<script src="/js/helper_onArrival.js"></script>`
     });
