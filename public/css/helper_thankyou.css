@@ -1,13 +1,15 @@
 .container{
-    height:100vh;
     display: flex;
     flex-direction: column;
     position: relative;
-    top:40px;
+    top:145px;
     width:100%;
     justify-items: center;
 }
 
+.fa-hand-holding-heart{
+    color:#5cb85c;
+}
 .helperWrapper{
     display:flex;
     flex-direction: column;
@@ -37,15 +39,18 @@ img{
 
 .excellent{
     text-align: center;
-    border-bottom: 1px solid lightgray;
 }
 .fa-heart{
-    margin:2px;
+    margin:5px;
+    margin-top:10px;
 }
 .feedback{
     display:flex;
     justify-content: space-around;
-    padding-top:25px;
+    padding-top:5px;
+    padding-bottom:10px;
+    margin-left:15px;
+    margin-right:15px;
 }
 .image{
     width:120px
@@ -68,3 +73,12 @@ img{
 #slogan{
     font-size: 10px;
 }
+
+.fa-heart{
+    color:#d9534f
+}
+
+p{
+    margin-bottom:0px;
+}
+

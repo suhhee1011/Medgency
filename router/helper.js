@@ -1,21 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("/",(req,res)=>{
-    res.render("helper_confirmHelp",{
+router.get("/confirm",(req,res)=>{
+    res.render("helper_HelpPage",{
         title: "nearByClinic",
         headingInfo:"nearByClinic",
-        script:`<script src="/js/helper_confirmHelp.js"></script>`,
-        helper : true
+        script:`<script src="/js/helper_confirmHelp.js"></script>`
     });
 });
 
 router.get("/helpPage",(req,res)=>{
     res.render("helper_HelpPage",{
         title: "nearByClinic",
-        headingInfo:"nearByClinic",
-        script:`<script src="/js/helper_nearByClinic.js"></script>`,
-        helper : true
+        headingInfo:"Help Page",
+        script:`<script src="/js/helper_onArrival.js"></script>`
     });
 });
 
@@ -24,15 +22,13 @@ router.get("/nearByClinic",(req,res)=>{
         title: "nearByClinic",
         headingInfo:"nearByClinic",
         script:`<script src="/js/helper_nearByClinic.js"></script>`,
-        helper : true
     });
 });
 
 router.get("/thankyou",(req,res)=>{
     res.render("helper_thankyou",{
         title: "Thank You",
-        headingInfo:"Thank You",
-        helper : true
+        headingInfo:"Thank You"
     });
 });
 
