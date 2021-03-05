@@ -1,11 +1,12 @@
 .emergencyMap#map-template{
-    height: 50%;
-    width: 100%;
-    top: 80px;
+    height: 40%;
+    width: 89%;
+    top: 163px;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     border-radius: 20px;
     box-shadow: 2px 3px 5px grey;
+    left: 24px;
 }
 
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
@@ -39,6 +40,8 @@ div.subtitle > div{
     left: 30px;
     display: flex;
     flex-direction: column;
+    margin-top: 21px;
+    font-size: 10px;
 }
 .helper-detail.top
 {
