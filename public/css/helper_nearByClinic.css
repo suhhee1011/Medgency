@@ -1,108 +1,129 @@
-.container{
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top:40px;
-    width:100%;
-}
-
-#showNearByClinicsWrapper{
-    background:lightgray;
-    z-index: 10;
-    display:flex;
-    flex-direction: column;
-    width:100%;
-}
-
-.streetWrapper{
-    display:flex;
-    background-color: white;
-    border:1px solid gray;
-    padding:3px;
-    height:fit-content;
-    align-items: center;
-}
-
-.streetWrapper p{
-    margin:0 0 0 5px;
-}
-
-#map-template{
-	width:93%;
-    top:200px;
-    align-self: center;
-    justify-self: center;
+.emergencyMap#map-template{
+    height: 50%;
+    width: 100%;
+    top: 80px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px;
     box-shadow: 2px 3px 5px grey;
 }
 
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
 
-#needyourhelp{
-    height: 30px;
-    background-color: blue; 
-    text-align: center;  
-    margin:0;
-    position:relative;
-    top:410px;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 3px 5px grey;
+}
+body{
+    background-color: white;
 }
 
-#needyourhelp p{
-    margin:5px;
-    padding:0;
+div.doctor >*,div.helper>*{
+    color: black;
+   
+} 
+div.title{
+    width:130px;
 }
-
-#helperController{
-    height:40vh;
-    margin: 0 30px 0 30px;
-    position:relative;
-    display:flex;
-    top:415px;
-    margin:0;
+div.subtitle {
+    border-bottom: 2px dotted rgb(212, 179, 129);
 }
-.progressbar{
-    width:25px;
-    margin-right: 2px;
+div.subtitle > div{
+    width:130px; 
+    display: inline-block;
 }
-
-.HelperInfoWrapper{
-    display:flex;
-    flex-direction: column;
-    background-color: antiquewhite;
+.helper-detail
+{
     position: relative;
-
-    height:50vh;
-    width:100%;
-}
-
-.HelperInfoWrapper img{
-    border-radius: 50%;   
-}
-
-.inprogress{
-    justify-self: right;
-    text-align: right;
-    width:150px
-}
-
-.imgContainer{
+    top: 480px;
+    left: 30px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    justify-content: center;
-    text-align: center;
+}
+.helper-detail.top
+{
   
+    top: 510px;
+
+
+}
+.helper-detail.top> div
+{
+  
+    height: 100px;
+    padding: 27px 12px 10px 35px;
+
 }
 
-.progressBarWrapper{
-    margin:0 5px 0 5px;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+
+.helper-detail .helper
+{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+    padding: 10px 12px 10px 35px;
+    border-radius: 10px;
+    box-shadow: 1px;
+    box-shadow: 2px 3px 5px grey;
+
 }
-.lineProgress{
-    height:100%;
-    width:0.5px;
-    background-color: gray;
-    align-items: center;
+
+
+.helper-detail .helpers
+{
+    width: 320px;
+   
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+    padding: 10px 12px 10px 35px;
+    border-radius: 10px;
+    box-shadow: 1px;
+    box-shadow: 2px 3px 5px grey;
+
 }
+
+
+
+.helper-detail .helper .title p:nth-child(1)
+{
+    font-weight: 600;
+}
+
+/* .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .lds-dual-ring
+  {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10000;
+      background-color: rgb(190, 190, 190);
+  } */
