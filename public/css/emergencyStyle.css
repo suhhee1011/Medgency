@@ -1,9 +1,10 @@
 .emergencyMap#map-template{
-    height: 50%;
-    width: 100%;
-    top: 80px;
+    height: 40%;
+    width: 90%;
+    top: 165px;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
+    left: 21px;
     border-radius: 20px;
     box-shadow: 2px 3px 5px grey;
 }
